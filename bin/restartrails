@@ -1,0 +1,2 @@
+ps aux | grep rails | grep master | awk '{print $2}' | xargs kill
+bundle exec rails server -d

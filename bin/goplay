@@ -1,0 +1,10 @@
+#!/bin/bash
+current_branch=$(git branch | grep "*" | awk '{print $2}')
+git stash
+git checkout master_play
+git pull heroku-play master
+git merge $current_branch
+git push
+git push heroku-play master_play:master
+git checkout $current_branch
+git stash apply

@@ -1,0 +1,7 @@
+#!/bin/bash
+current_branch=$(git branch | grep "*" | awk '{print $2}')
+git branch | grep -v master | grep -v '\*' | xargs git branch -d 2> branches
+cat branches | sed '/If you are/d' |  sed 's/^[^'"'"']*//g' | sed 's/^'"'"'//g' | sed 's/'"'"'.*$//g' | sed '/refs/d' > branches2
+cat branches2 | xargs -i sh -c 'git checkout {} && git checkout master'
+# rm branches && rm branches2
+git checkout $current_branch

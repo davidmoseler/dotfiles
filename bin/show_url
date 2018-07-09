@@ -1,0 +1,1 @@
+cat config/database.yml | grep url | grep -v '#' | grep -v 'ENV'

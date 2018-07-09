@@ -1,0 +1,7 @@
+#/bin/bash
+cd ~/code
+string="cd files\nbinary\nget myprojects.tar.gz"
+echo -e $string | pftp ftp.drivehq.com
+tar xfv myprojects.tar.gz
+rm myprojects.tar.gz
+cd -

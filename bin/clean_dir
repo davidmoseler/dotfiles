@@ -1,0 +1,3 @@
+git unstage
+git co .
+git st | xargs rm -r

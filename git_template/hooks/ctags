@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+PATH="/usr/local/bin:$PATH"
+dir="`git rev-parse --git-dir`"
+trap 'rm -f "$dir/$$.tags"' EXIT
+git ls-files | grep -v 'vendor/assets/javascripts' |  \
+  ctags --exclude=.git --exclude=node_modules --exclude=.idea --exclude=tmp --exclude=vendor --exclude=log --tag-relative -L - -f"$dir/$$.tags"
+mv "$dir/$$.tags" "$dir/tags"
+echo "ctags updated"

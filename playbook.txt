@@ -1,0 +1,35 @@
+Passo a passo para a instalação do app de Estudos Adaptativos:
+-Clonar o repositório no seu local de preferência:
+  cd local/de/preferencia
+  git clone https://github.com/studiare/produtos_adaptativos
+-Instalar o ruby 2.3.1 (demora um pouco):
+  rbenv install 2.3.1
+-Setar o repositório para utilizar a versão correta do ruby:
+  cd produtos_adaptativos
+  rbenv local 2.3.1
+-Instalar o bundler:
+  gem install bundler
+-Instalar as gemas:
+  bundle install
+-Instalar as bibliotecas de node:
+  npm install
+-Configurar o postgres se for usar uma base local
+-Rodar o servidor:
+  bundle exec rails s &
+-ou o console:
+  bundle exec rails c
+-Para reiniciar o servidor de rails, digite:
+  restartrails
+-Para encerrar em definitivo o servidor, use:
+  ps aux | grep rails | grep master | awk '{print $2}' | xargs kill
+
+Se for utilizar o vim, há três opções:
+Primeira opção: Utilizar o vimrc que vem por padrão neste repositório. Ele é instalado automaticamente com o fresh_start, e possui uma série de comandos integrados com este ambiente de desenvolvimento, bem como plugins visando à máxima produtividade. Para instalar os plugins, basta entrar no vim e digitar :PluginInstall
+Segunda opção: Utilizar seu vimrc de preferência.
+Terceira opção: Deletar o vimrc com rm ~/.vimrc afim de utilizar o vim original, sem nenhum plugin ou modificação.
+
+Não temos ainda uma instalação automatizada do RubyMine neste repositório. O vim com a configuração presente, no entanto, oferece uma variedade de funcionalidades no mesmo nível, e uma produtividade pessoal crescente que depende apenas da experiência, conhecimento e criatividade do seu usuário, além de permitir uma integração maior com o sistema Unix.
+
+O RubyMine pode ser instalado e configurado facilmente, seguindo tutoriais do seu próprio site.
+
+Aconselho fortemente o uso de uma dessas IDEs, para tirar proveito de toda a produtividade que a linguagem Ruby é capaz de proporcionar ao seu programador.

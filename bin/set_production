@@ -1,0 +1,7 @@
+cd ~/code/produtos_adaptativos
+cp ../database.yml config/database.yml
+sed '3 s/url/# &/' config/database.yml > config/database.yml2
+mv config/database.yml2 config/database.yml
+sed '4 s/# url/url/' config/database.yml > config/database.yml2
+mv config/database.yml2 config/database.yml
+cd -
