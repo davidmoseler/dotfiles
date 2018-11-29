@@ -15,6 +15,7 @@
 #The 'home' directory is a personal backup, that you need to setup in drivehq ftp server if you want
 #Otherwise, ignore
 cp -r ~/code/dotfiles/bin ~/bin
+cp -r ~/code/myprojects/bin/* ~/bin/
 chmod 700 ~/bin/setperm
 ~/bin/setperm
 ~/bin/gethome
