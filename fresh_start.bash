@@ -71,10 +71,10 @@ sudo apt-get install tmux vim-gtk xclip silversearcher-ag ctags
 # sudo apt-get install virtualbox-guest-x11
 
 #Geckodriver for Capybara :-)
-wget https://github.com/mozilla/geckodriver/releases/download/v0.16.0/geckodriver-v0.16.0-linux64.tar.gz
-tar xfv geckodriver-v0.16.0-linux64.tar.gz
+wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
+tar xfv geckodriver-v0.23.0-linux64.tar.gz
 sudo mv geckodriver /usr/local/bin
-rm geckodriver-v0.16.0-linux64.tar.gz
+rm geckodriver-v0.23.0-linux64.tar.gz
 
 #Temporarily commenting huge vim plugin
 # cd ~/.vim/bundle/YouCompleteMe
