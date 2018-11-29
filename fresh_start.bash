@@ -44,11 +44,13 @@ sudo apt-get update
 sudo apt-get install build-essential cmake
 sudo apt-get install python-dev python3-dev
 sudo apt-get install wget curl libgnome2-bin
+
 #Heroku
-sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
-curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
-sudo apt-get install heroku
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+# sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+# curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+# sudo apt-get install heroku
+# gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
 sudo apt-get install libssl-dev zlib1g-dev libreadline-dev libyaml-dev liblzma-dev libgmp-dev libpq-dev qt5-default libqt5webkit5-dev
 if [ ! -d ~/.rbenv ]; then
   git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
