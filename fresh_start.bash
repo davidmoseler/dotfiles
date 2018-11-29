@@ -65,8 +65,10 @@ sudo apt-get install nodejs-legacy
 sudo apt-get install npm
 sudo apt-get install ssh vsftpd postgresql
 sudo apt-get install tmux vim-gtk xclip silversearcher-ag ctags
-sudo apt-get install virtualbox-guest-additions-iso
-sudo apt-get install virtualbox-guest-x11
+
+#If you are using ubuntu inside virtualbox
+# sudo apt-get install virtualbox-guest-additions-iso
+# sudo apt-get install virtualbox-guest-x11
 
 #Geckodriver for Capybara :-)
 wget https://github.com/mozilla/geckodriver/releases/download/v0.16.0/geckodriver-v0.16.0-linux64.tar.gz
