@@ -127,6 +127,7 @@ alias wn='write_note'
 alias newpush='git push 2>&1 | grep git | bash'
 alias ttmux='cd ~/code/produtos_adaptativos && tmux'
 alias b='bundle exec'
+alias pytest='export PYTHONPATH="$PYTHONPATH:$PWD" && pytest'
 
 bind -x '"\C-g\C-b":"getb"'
 bind -x '"\C-g\C-t":"getc"'
