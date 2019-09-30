@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm ~/.ylva.open_db
+cp ~/code/myprojects/passdb ~
+ylva -u ~/passdb
