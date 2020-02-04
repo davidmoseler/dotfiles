@@ -1,7 +1,9 @@
 #/bin/bash
+current_dir=`pwd`
 cd ~/code
-string="cd files\nbinary\nget myprojects.tar.gz"
+mkdir myprojects
+string="cd files\nbinary\nget myprojects.git.tar.gz"
 echo -e $string | pftp ftp.drivehq.com
-tar xfv myprojects.tar.gz
-rm myprojects.tar.gz
-cd -
+tar xfv myprojects.git.tar.gz
+rm myprojects.git.tar.gz
+cd $current_dir
