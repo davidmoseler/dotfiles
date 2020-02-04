@@ -14,7 +14,7 @@
 #The inexistent "workflow" folder is a project which does not appear in this rep
 #The 'home' directory is a personal backup, that you need to setup in drivehq ftp server if you want
 #Otherwise, ignore
-cp -r ~/code/dotfiles/bin ~/bin
+cp -r ~/code/dotfiles/bin/* ~/bin
 cp -r ~/code/myprojects/bin/* ~/bin/
 chmod 700 ~/bin/setperm
 ~/bin/setperm
@@ -66,6 +66,12 @@ sudo apt-get install nodejs-legacy
 sudo apt-get install npm
 sudo apt-get install ssh vsftpd postgresql
 sudo apt-get install tmux vim-gtk xclip silversearcher-ag ctags
+
+#tor
+wget https://www.torproject.org/dist/torbrowser/9.0.2/tor-browser-linux64-9.0.2_en-US.tar.xz
+tar -xvf tor-browser-linux64-9.0.2_en-US.tar.xz
+rm tor-browser-linux64-9.0.2_en-US.tar.xz
+sudo mv tor-browser_en-US/* /usr/share/applications
 
 #If you are using ubuntu inside virtualbox
 # sudo apt-get install virtualbox-guest-additions-iso
