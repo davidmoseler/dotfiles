@@ -14,8 +14,7 @@
 #The inexistent "workflow" folder is a project which does not appear in this rep
 #The 'home' directory is a personal backup, that you need to setup in drivehq ftp server if you want
 #Otherwise, ignore
-cp -r ~/code/dotfiles/bin/* ~/bin
-cp -r ~/code/myprojects/bin/* ~/bin/
+./install_bin.bash
 chmod 700 ~/bin/setperm
 ~/bin/setperm
 ~/bin/gethome
