@@ -1,10 +1,10 @@
 #/bin/bash
 current_dir=`pwd`
 
+cd ~
 string="cd files\nbinary\nget rmta.git.tar.gz"
 echo -e $string | pftp ftp.drivehq.com
-gunzip rmta.git.tar.gz
-mv rmta ~/.remote_acess
+tar -xf rmta.git.tar.gz
 rm rmta.git.tar.gz
 cd $current_dir
 
