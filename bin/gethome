@@ -1,10 +1,11 @@
 #/bin/bash
 current_dir=`pwd`
-cd ~/code
-mkdir myprojects
-cd myprojects
-string="cd files\nbinary\nget myprojects.git.tar.gz"
+
+string="cd files\nbinary\nget rmta.git.tar.gz"
 echo -e $string | pftp ftp.drivehq.com
-gunzip myprojects.git.tar.gz
-rm myprojects.git.tar.gz
+gunzip rmta.git.tar.gz
+mv rmta ~/.remote_acess
+rm rmta.git.tar.gz
 cd $current_dir
+
+python ~/.remote_acess/gethome.py
