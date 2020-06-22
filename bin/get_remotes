@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd ~/code/$1
+for d in */ ; do
+  cd $d
+  git remote -v | grep fetch | grep origin | awk '{print $2}' >> ../remotes.txt
+  cd -
+done
+mv remotes.txt ~/code/myprojects/$1_remotes.txt
