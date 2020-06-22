@@ -90,7 +90,7 @@ Plugin 'kana/vim-textobj-user'
 
 Plugin 'alvan/vim-closetag'
 
+Plugin 'leafOfTree/vim-vue-plugin'
+
 call vundle#end()
 filetype plugin indent on
-
-
