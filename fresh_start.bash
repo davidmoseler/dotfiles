@@ -82,6 +82,9 @@ tar xfv geckodriver-v0.23.0-linux64.tar.gz
 sudo mv geckodriver /usr/local/bin
 rm geckodriver-v0.23.0-linux64.tar.gz
 
+#Aws cli
+sudo apt-get install -y awscli
+
 #Temporarily commenting huge vim plugin
 # cd ~/.vim/bundle/YouCompleteMe
 # ./install.py --clang-completer
