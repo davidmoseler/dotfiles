@@ -41,9 +41,9 @@ cp ~/code/dotfiles/tmux.conf ~/.tmux.conf
 
 #Packages and more packages :-)
 sudo apt-get update
-sudo apt-get install build-essential cmake
-sudo apt-get install python-dev python3-dev
-sudo apt-get install wget curl libgnome2-bin
+sudo apt-get install -y build-essential cmake
+sudo apt-get install -y python-dev python3-dev
+sudo apt-get install -y wget curl libgnome2-bin
 
 #Heroku
 # sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
@@ -51,7 +51,7 @@ sudo apt-get install wget curl libgnome2-bin
 # sudo apt-get install heroku
 # gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 
-sudo apt-get install libssl-dev zlib1g-dev libreadline-dev libyaml-dev liblzma-dev libgmp-dev libpq-dev qt5-default libqt5webkit5-dev
+sudo apt-get install -y libssl-dev zlib1g-dev libreadline-dev libyaml-dev liblzma-dev libgmp-dev libpq-dev qt5-default libqt5webkit5-dev
 if [ ! -d ~/.rbenv ]; then
   git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
   mkdir -p ~/.rbenv/plugins
@@ -59,12 +59,12 @@ if [ ! -d ~/.rbenv ]; then
   git clone git://github.com/sstephenson/ruby-build.git
   cd -
 fi
-sudo apt-get install ruby-dev
-sudo apt-get install libmysqlclient-dev
-sudo apt-get install nodejs-legacy
-sudo apt-get install npm
-sudo apt-get install ssh vsftpd postgresql
-sudo apt-get install tmux vim-gtk xclip silversearcher-ag ctags
+sudo apt-get install -y ruby-dev
+sudo apt-get install -y libmysqlclient-dev
+sudo apt-get install -y nodejs-legacy
+sudo apt-get install -y npm
+sudo apt-get install -y ssh vsftpd postgresql
+sudo apt-get install -y tmux vim-gtk xclip silversearcher-ag ctags
 
 #tor
 wget https://www.torproject.org/dist/torbrowser/9.0.2/tor-browser-linux64-9.0.2_en-US.tar.xz
@@ -73,8 +73,8 @@ rm tor-browser-linux64-9.0.2_en-US.tar.xz
 sudo mv tor-browser_en-US/* /usr/share/applications
 
 #If you are using ubuntu inside virtualbox
-# sudo apt-get install virtualbox-guest-additions-iso
-# sudo apt-get install virtualbox-guest-x11
+# sudo apt-get install -y virtualbox-guest-additions-iso
+# sudo apt-get install -y virtualbox-guest-x11
 
 #Geckodriver for Capybara :-)
 wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
